@@ -1,6 +1,10 @@
 /**
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
+ * @Student number: 100325825
+ * @Course: OOP 32300
+ *
+ * @Date: September 29th 2021
  * @version 1.0
  */
 
@@ -22,7 +26,6 @@
 Person::Person(std::string first_name, std::string last_name, float age)
 	:m_age(age),m_firstName(std::move(first_name)),m_lastName(std::move(last_name))
 {
-
 }
 
 /**
@@ -81,6 +84,9 @@ void Person::SaysHello() const
     std::cout << getFirstName() << " says Hello!" << std::endl;
 }
 
+/**
+ * @return string
+ */
 std::string Person::ToString()
 {
     std::string outputString = "";
@@ -89,7 +95,7 @@ std::string Person::ToString()
     outputString += "First Name: "+ getFirstName() +"\n";
     outputString += "Last Name : "+ getLastName() + "\n";
     outputString += "Age       :" + std::to_string(getAge()) + "\n";
-    outputString += "-----------------------------------------------\n\n";
+    outputString += "-----------------------------------------------\n";
     return outputString;
 }
 

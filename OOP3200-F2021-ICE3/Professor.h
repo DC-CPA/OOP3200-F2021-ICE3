@@ -1,6 +1,10 @@
 /**
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
+ * @Student number: 100325825
+ * @Course: OOP 32300
+ *
+ * @Date: September 29th 2021
  * @version 1.0
  */
 #pragma once
@@ -22,17 +26,25 @@ public:
  * @param employee_id
  */
 Professor(std::string first_name, std::string last_name, float age, std::string employee_id);
+
+/**
+* @return string
+*/
 std::string getEmployeeID() const;
 
-std::string getEmployeeID();
-    
 /**
- * @param value
+* @param value
+*/
+void setEmployeeID(const std::string& value);
+
+/**
+ * @return void
  */
-void setEmployeeID(std::string value);
-    
 void Teaches();
 
+/**
+ * @return string
+ */
 std::string ToString();
 private:
 std::string m_employeeID;

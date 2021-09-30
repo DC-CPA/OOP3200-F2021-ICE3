@@ -1,6 +1,10 @@
 /**
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
+ * @Student number: 100325825
+ * @Course: OOP 32300
+ *
+ * @Date: September 29th 2021
  * @version 1.0
  */
 
@@ -47,7 +51,7 @@ void Student::setStudentID(const std::string& value)
  */
 void Student::Studies()const 
 {
-    std::cout << getFirstName() << " is studying" << std::endl;
+    std::cout << getFirstName() << " is studying!\n" << std::endl;
 }
 
 /**

@@ -1,6 +1,10 @@
 /**
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
+ * @Student number: 100325825
+ * @Course: OOP 32300
+ *
+ * @Date: September 29th 2021
  * @version 1.0
  */
 #pragma once
@@ -27,6 +31,9 @@ float getAge();
  */
 void setAge(float value);
 
+/**
+ * @return string
+ */
 std::string getFirstName() const;
 
     
@@ -35,13 +42,24 @@ std::string getFirstName() const;
  */
 void setFirstName(const std::string& value);
 
+/**
+ * @param value
+ */
 std::string getLastName() const;
 
+/**
+ * @return value
+ */
 void setLastName(const std::string& value);
 
-    
+/**
+ * @return void
+ */
 void SaysHello() const;
 
+/**
+ * @return string
+ */
 virtual std::string ToString();
 
 private: 
