@@ -7,6 +7,9 @@
 
 #include "Professor.h"
 
+#include <iostream>
+#include <ostream>
+
 /**
  * Professor implementation
  */
@@ -18,34 +21,44 @@
  * @param age
  * @param employee_id
  */
-void Professor::Professor(string first_name, string last_name, float age, string employee_id) {
-
+Professor::Professor(std::string first_name, std::string last_name, float age, std::string employee_id)
+	:Person(first_name,last_name,age),m_employeeID(std::move(employee_id))
+{
 }
 
 /**
  * @return string
  */
-string Professor::getEmployeeID() {
-    return "";
+std::string Professor::getEmployeeID()const
+{
+    return m_employeeID;
 }
 
 /**
  * @param value
  */
-void Professor::setEmployeeID(string value) {
-
+void Professor::setEmployeeID(const std::string& value)
+{
+    m_employeeID = value;
 }
 
 /**
  * @return void
  */
-void Professor::Teaches() {
-    return;
+void Professor::Teaches()
+{
+    std::cout << getFirstName() << " is teaching!" << std::endl;
 }
 
 /**
  * @return string
  */
-string Professor::ToString() {
-    return "";
+std::string Professor::ToString()
+{
+    std::string outputString = "";
+
+    outputString += "-----------------------------------------------\n";
+    outputString += "Employee ID: " + getEmployeeID() + "\n";
+    outputString += "-----------------------------------------------\n\n";
+    return outputString;
 }
