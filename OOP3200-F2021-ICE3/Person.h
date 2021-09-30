@@ -2,7 +2,7 @@
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
  * @Student number: 100325825
- * @Course: OOP 32300
+ * @Course: OOP 3200
  *
  * @Date: September 29th 2021
  * @version 1.0
@@ -23,7 +23,12 @@ public:
  * @param age
  */
 Person(std::string first_name, std::string last_name, float age);
-    
+
+//virtual  ~Person() = 0;
+
+/**
+ * @return float
+ */
 float getAge();
     
 /**

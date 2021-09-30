@@ -2,7 +2,7 @@
  * Project OOP3200-F2021-ICE3
  * @author Katherine Bellman
  * @Student number: 100325825
- * @Course: OOP 32300
+ * @Course: OOP 3200
  *
  * @Date: September 29th 2021
  * @version 1.0
